@@ -15,7 +15,7 @@ class CloudCostTests(unittest.TestCase):
         self.assertGreater(cc.app_execution(100), 0)
         self.assertGreater(cc.app_execution(1000), 0)
         self.assertGreater(cc.app_execution(5000), 0)
-    
+
     def test_month(self):
         cc = CloudCost()
         self.assertGreater(cc.month(1, 1), 0)
@@ -25,7 +25,7 @@ class CloudCostTests(unittest.TestCase):
         self.assertGreater(cc.month(100, 4), 0)
         self.assertGreater(cc.month(1000, 4), 0)
         self.assertGreater(cc.month(50000, 4), 0)
-    
+
     def test_year(self):
         cc = CloudCost()
         self.assertEqual(12, len(cc.year(1)))
@@ -34,5 +34,6 @@ class CloudCostTests(unittest.TestCase):
         self.assertEqual(12, len(cc.year(1000)))
         self.assertEqual(12, len(cc.year(5000)))
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()
