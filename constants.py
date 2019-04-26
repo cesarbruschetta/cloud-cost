@@ -1,7 +1,0 @@
-from decimal import Decimal
-
-PRICE_QUEUE = Decimal(0.00000040)
-PRICE_EXECUTION = Decimal(0.0000002)
-PRICE_BY_SECOND_EXECUTION = Decimal(0.0002080)
-TIME_EXECUTION = Decimal(3.0)
-COUNT_FUNCTION = Decimal(2.0)
